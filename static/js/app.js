@@ -56,7 +56,7 @@ d3.json("samples.json").then((data) => {
 
 
         var container = d3.select('#sample-metadata');
-        container.text(`ID: ${ids[0]} <br> Age: ${age[0]} <br> Ethnicity: ${ethnicity[0]} <br> Gender: ${gender[0]} <br> Belly Button Type: ${bbtype[0]} <br> Location: ${location[0]}`);
+        container.text(`ID: ${ids[0]} | Age: ${age[0]} | Ethnicity: ${ethnicity[0]} | Gender: ${gender[0]} | Belly Button Type: ${bbtype[0]} | Location: ${location[0]}`);
       }
 
       d3.selectAll("#selDataset").on("change", optionChanged);
@@ -98,7 +98,7 @@ d3.json("samples.json").then((data) => {
   
   
           var container = d3.select('#sample-metadata');
-          container.text(`ID: ${ids[i]}; Age: ${age[i]}; Ethnicity: ${ethnicity[i]}; Gender: ${gender[i]}; Belly Button Type: ${bbtype[i]}; Location: ${location[i]}`);
+          container.text(`ID: ${ids[i]} | Age: ${age[i]} | Ethnicity: ${ethnicity[i]} | Gender: ${gender[i]} | Belly Button Type: ${bbtype[i]} | Location: ${location[i]}`);
         }
         }
       }
